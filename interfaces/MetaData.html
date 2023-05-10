@@ -23,7 +23,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">MetaData</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/9f1d552/src/base/Command.ts#L32">src/base/Command.ts:32</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/7f03e37/src/base/Command.ts#L33">src/base/Command.ts:33</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -32,6 +32,9 @@
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
 <div class="tsd-index-list"><a href="MetaData.html#coolDown" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>cool<wbr/>Down?</span></a>
+<a href="MetaData.html#forbiddenChannels" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>forbidden<wbr/>Channels?</span></a>
+<a href="MetaData.html#forbiddenRoles" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>forbidden<wbr/>Roles?</span></a>
+<a href="MetaData.html#forbiddenUsers" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>forbidden<wbr/>Users?</span></a>
 <a href="MetaData.html#guildOnly" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>guild<wbr/>Only?</span></a>
 <a href="MetaData.html#guilds" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>guilds?</span></a>
 <a href="MetaData.html#interferingCommands" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>interfering<wbr/>Commands?</span></a>
@@ -44,14 +47,35 @@
 <div class="tsd-comment tsd-typography"><p>The amount of time before running the command again. Must be between 0 and 300 seconds.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/9f1d552/src/base/Command.ts#L41">src/base/Command.ts:41</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/7f03e37/src/base/Command.ts#L42">src/base/Command.ts:42</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="forbiddenChannels" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>forbidden<wbr/>Channels</span><a href="#forbiddenChannels" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">forbidden<wbr/>Channels</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+<div class="tsd-comment tsd-typography"><p>If the command is forbidden in some specific channels (use it for private bots).</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/7f03e37/src/base/Command.ts#L55">src/base/Command.ts:55</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="forbiddenRoles" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>forbidden<wbr/>Roles</span><a href="#forbiddenRoles" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">forbidden<wbr/>Roles</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+<div class="tsd-comment tsd-typography"><p>If the command is forbidden for some specific roles (use it for private bots).</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/7f03e37/src/base/Command.ts#L63">src/base/Command.ts:63</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="forbiddenUsers" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>forbidden<wbr/>Users</span><a href="#forbiddenUsers" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">forbidden<wbr/>Users</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+<div class="tsd-comment tsd-typography"><p>If the command is forbidden for some specific users.</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/7f03e37/src/base/Command.ts#L59">src/base/Command.ts:59</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="guildOnly" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>guild<wbr/>Only</span><a href="#guildOnly" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">guild<wbr/>Only</span><span class="tsd-signature-symbol">?:</span> <a href="../enums/CommandLocation.html" class="tsd-signature-type tsd-kind-enum">CommandLocation</a></div>
 <div class="tsd-comment tsd-typography"><p>Where the command should be executed.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/9f1d552/src/base/Command.ts#L45">src/base/Command.ts:45</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/7f03e37/src/base/Command.ts#L46">src/base/Command.ts:46</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="guilds" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>guilds</span><a href="#guilds" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">guilds</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
@@ -59,7 +83,7 @@
 List the guilds where the command should be executed.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/9f1d552/src/base/Command.ts#L50">src/base/Command.ts:50</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/7f03e37/src/base/Command.ts#L51">src/base/Command.ts:51</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="interferingCommands" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>interfering<wbr/>Commands</span><a href="#interferingCommands" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">interfering<wbr/>Commands</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
@@ -67,7 +91,7 @@ List the guilds where the command should be executed.</p>
 If one of the interfering commands are currently running, this command will be ignored.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/9f1d552/src/base/Command.ts#L37">src/base/Command.ts:37</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/KyatsuJS/kyatsujs/blob/7f03e37/src/base/Command.ts#L38">src/base/Command.ts:38</a></li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -88,6 +112,9 @@ If one of the interfering commands are currently running, this command will be i
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#coolDown" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>cool<wbr/>Down</span></a></li>
+<li><a href="#forbiddenChannels" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>forbidden<wbr/>Channels</span></a></li>
+<li><a href="#forbiddenRoles" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>forbidden<wbr/>Roles</span></a></li>
+<li><a href="#forbiddenUsers" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>forbidden<wbr/>Users</span></a></li>
 <li><a href="#guildOnly" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>guild<wbr/>Only</span></a></li>
 <li><a href="#guilds" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>guilds</span></a></li>
 <li><a href="#interferingCommands" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>interfering<wbr/>Commands</span></a></li></ul></div></details></div>
@@ -104,24 +131,31 @@ If one of the interfering commands are currently running, this command will be i
 <li><a href="../classes/InterferingManager.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Interfering<wbr/>Manager</span></a></li>
 <li><a href="../classes/KyaClient.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Kya<wbr/>Client</span></a></li>
 <li><a href="../classes/KyaClientAppearance.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Kya<wbr/>Client<wbr/>Appearance</span></a></li>
+<li><a href="../classes/VoiceManager.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Voice<wbr/>Manager</span></a></li>
 <li><a href="AlertData.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-256-path"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)" id="icon-256-text"></path></svg><span>Alert<wbr/>Data</span></a></li>
 <li><a href="CommandOptions.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg><span>Command<wbr/>Options</span></a></li>
 <li><a href="KyaOptions.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg><span>Kya<wbr/>Options</span></a></li>
 <li><a href="MetaData.html" class="current"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg><span>Meta<wbr/>Data</span></a></li>
-<li><a href="../types/ContextChannel.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4194304-path"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)" id="icon-4194304-text"></path></svg><span>Context<wbr/>Channel</span></a></li>
+<li><a href="../types/AvailableEvent.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4194304-path"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)" id="icon-4194304-text"></path></svg><span>Available<wbr/>Event</span></a></li>
+<li><a href="../types/CommandCallback.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Command<wbr/>Callback</span></a></li>
+<li><a href="../types/ContextChannel.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Context<wbr/>Channel</span></a></li>
+<li><a href="../types/CoolDownsQueueElement.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Cool<wbr/>Downs<wbr/>Queue<wbr/>Element</span></a></li>
 <li><a href="../types/CreateAnonymeArray.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Create<wbr/>Anonyme<wbr/>Array</span></a></li>
+<li><a href="../types/EventCallback.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Event<wbr/>Callback</span></a></li>
+<li><a href="../types/InterferingQueueElement.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Interfering<wbr/>Queue<wbr/>Element</span></a></li>
 <li><a href="../types/NumRange.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Num<wbr/>Range</span></a></li>
-<li><a href="../types/availableEvent.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>available<wbr/>Event</span></a></li>
-<li><a href="../types/commandCallback.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>command<wbr/>Callback</span></a></li>
-<li><a href="../types/coolDownsQueueElement.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>cool<wbr/>Downs<wbr/>Queue<wbr/>Element</span></a></li>
-<li><a href="../types/eventCallback.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>event<wbr/>Callback</span></a></li>
-<li><a href="../types/interferingQueueElement.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>interfering<wbr/>Queue<wbr/>Element</span></a></li>
-<li><a href="../types/systemFunction.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>system<wbr/>Function</span></a></li>
+<li><a href="../types/SystemFunction.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>System<wbr/>Function</span></a></li>
+<li><a href="../types/VoiceEvent.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Voice<wbr/>Event</span></a></li>
+<li><a href="../types/VoiceEventCallback.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg><span>Voice<wbr/>Event<wbr/>Callback</span></a></li>
 <li><a href="../variables/Colors.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-variable)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-32-path"></rect><path d="M11.106 16L8.85 7.24H9.966L11.454 13.192C11.558 13.608 11.646 13.996 11.718 14.356C11.79 14.708 11.842 14.976 11.874 15.16C11.906 14.976 11.954 14.708 12.018 14.356C12.09 13.996 12.178 13.608 12.282 13.192L13.758 7.24H14.85L12.582 16H11.106Z" fill="var(--color-text)" id="icon-32-text"></path></svg><span>Colors</span></a></li>
 <li><a href="../variables/PresenceStatusList.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg><span>Presence<wbr/>Status<wbr/>List</span></a></li>
+<li><a href="../variables/VoiceEvents.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg><span>Voice<wbr/>Events</span></a></li>
 <li><a href="../variables/defaultEventsCb.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg><span>default<wbr/>Events<wbr/>Cb</span></a></li>
 <li><a href="../variables/defaultMetaData.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg><span>default<wbr/>Meta<wbr/>Data</span></a></li>
-<li><a href="../functions/callbackDefault.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-64-path"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)" id="icon-64-text"></path></svg><span>callback<wbr/>Default</span></a></li>
+<li><a href="../functions/SFToCtxChannel.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-64-path"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)" id="icon-64-text"></path></svg><span>SFTo<wbr/>Ctx<wbr/>Channel</span></a></li>
+<li><a href="../functions/SFToMember.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>SFTo<wbr/>Member</span></a></li>
+<li><a href="../functions/SFToUser.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>SFTo<wbr/>User</span></a></li>
+<li><a href="../functions/callbackDefault.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>callback<wbr/>Default</span></a></li>
 <li><a href="../functions/err.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>err</span></a></li>
 <li><a href="../functions/log.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>log</span></a></li>
 <li><a href="../functions/split.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>split</span></a></li>

@@ -26,7 +26,3 @@ const bot = KyaClient.init("your token goes here");
 
 void bot.login();
 ```
-
-## Go further
-
-[Documentation](Documentation/classes/Command.md) • [Guide](Guide/Getting-Started.md)
